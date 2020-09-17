@@ -30,6 +30,56 @@ body {
     line-height: 24px;
     font-style: normal;
     font-weight: normal;  
-    color: #283136;
-    background: #EEEEEE;   
+    color: var(--dark);
+    background-color: var(--white);   
 }
+
+.main-header {
+    background-color: var(--light-gray);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black)
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-navigation {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--light-gray);
+}
+
+.navigation-list {
+    list-style: none;
+    
+}
+
+
+.navigation-list a:hover,
+.navigation-list a:focus,
+.basket-link:hover,
+.basket-link:focus {
+    color: var(--red);
+}
+
+.features {
+    background-color: var(--light-gray);
+}
+
+.main-title {
+    visibility: hidden;
+    
+}
+
+.second-title {
+    visibility: hidden;
+}
+
