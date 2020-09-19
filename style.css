@@ -228,4 +228,15 @@ img {
 
 .social-list {
     list-style: none;
+    background-color: var(--light-dark);
+    
 }
+
+.client a:hover {
+    opacity: 0.2;
+}
+
+.client a:active {
+    opacity: 0.1;
+}
+
