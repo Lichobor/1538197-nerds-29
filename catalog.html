@@ -7,50 +7,62 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="..\html\index.html">
-              <img src="img\nerds-logo.svg" width:"160" height:"65" alt="логотип дизайн-студии Нёрдс">
-            </a>
-            <ul>
+<body class="page-body">
+    <header class="main-header">
+      <a class="main-header-logo" href="index.html">
+        <img src="img\nerds-logo.svg" width:"160" height:"65" alt="логотип дизайн-студии Нёрдс">
+      </a>
+        <nav class="main-navigation">
+            <ul class="navigation-list">
               <li><a href="blank.html">cтудия</a></li>
               <li><a href="blank.html">клиенты</a></li>
               <li><a href="catalog.html">магазин</a></li>
               <li><a href="blank.html">контакты</a></li>       
             </ul>
-            <a href="blank.html">корзина</a>
+            <a class="basket-link" href="blank.html">корзина</a>
           </nav>
     </header>
     <main>
-        <h1>Магазин готовых шаблонов</h1>
+        <h1 class="main-title-catalog">Магазин готовых шаблонов</h1>
         <section>
-            <h2>Фильтр товаров</h2>
+            <h2 second-title>Фильтр товаров</h2>
             <!--Здесь будет форма фильтра-->
         </section>
         <section>
-            <h2>Карточки товаров</h2>
-            <ul>
+            <h2 class="second-title">Карточки товаров</h2>
+            <ul class="product-list">
                 <li>
-                    <a href="#"><img src="#" alt="фото шаблон_1"></a>
+                    <a href="#">
+                      <img src="img\img-sedona 1.jpg" alt="фото sedona">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="#" alt="фото шаблон_2"></a>
+                    <a href="#">
+                      <img src="img\img-pink 1.jpg" alt="фото pink">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="#" alt="фото шаблон_3"></a>
+                    <a href="#">
+                      <img src="img\img-barbershop 1.jpg" alt="фото barbershop">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="#" alt="фото шаблон_4"></a>
+                    <a href="#">
+                      <img src="img\img-mishka 1.jpg" alt="фото mishka">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="#" alt="фото шаблон_5"></a>
+                    <a href="#">
+                      <img src="img\img-aplus 1.jpg" alt="фото alpus">
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><img src="#" alt="фото шаблон_6"></a>
+                    <a href="#">
+                      <img src="img\img-kvast 1.jpg" alt="фото kvast">
+                    </a>
                 </li>
             </ul>
-            <ul>
+            <ul class="pagination-list">
                 <li>
                     <a>1</a>
                 </li>
@@ -68,25 +80,43 @@
         </section>
 
     </main>
-    <footer>
-        <section>
-          <h2>Карта</h2>
-        </section>
-        <section>
-          <h2>Давайте дружить, это выгодно</h2>
-          <p>Скидка 10% для друзей из социальных сетей</p>
-          <ul>
-            <li>
-              <a href="#">VK</a>
-            </li>
-            <li>
-              <a href="#">FB</a>
-            </li>
-            <li>
-              <a href="#">INST</a>
-            </li>
-          </ul>
-        </section>
-      </footer>
+    <footer class="main-footer">
+      <section class="map">
+        <h2 class="second-title">Карта</h2>
+        <p class="map-capture">
+          <img src="#" alt="карта">
+        </p>
+      </section>
+      <section class="social-network">
+        <h2 class="second-title">Давайте дружить, это выгодно</h2>
+        <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+        <ul class="social-list">
+          <li class="item vk">
+            <a href="https://vk.com/">
+              <img src="img\vk-icon.svg" width="26" height="15" alt="VK">
+            </a>
+          </li>
+          <li class="item fb">
+            <a href="https://www.facebook.com/">
+              <img src="img\fb-icon.svg" width="12" height="22" alt="FB">                    
+            </a>
+          </li>
+          <li class="item inst">
+            <a href="https://www.instagram.com/">
+              <img src="img\insta-icon.svg" width="21" height="21" alt="INSTAGRAM">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="second-title">Наш адрес</h2>
+         <p class="contacts-capture">HЁRDS DESIGN STUDIO</p>
+         <p class="contacts-text">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p>
+         <p class="phone">
+           <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+         </p>
+         <button class="big-button" type="button">Напишите нам</button>
+      </section>
+    </footer>
 </body>
 </html>
