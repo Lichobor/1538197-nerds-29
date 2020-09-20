@@ -240,3 +240,7 @@ img {
     opacity: 0.1;
 }
 
+/*Catalog*/
+.pagination-list {
+    list-style: none;
+}
