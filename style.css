@@ -60,9 +60,6 @@ img {
 
 /*Navigation*/
 
-.main-navigation {
-    
-}
 
 .navigation-list {
     list-style: none;
@@ -73,10 +70,6 @@ img {
     
 }
 
-.basket-link {
-    
-    
-}
 
 
 .navigation-list a:hover,
@@ -124,10 +117,7 @@ img {
 }
 
 /*Container*/
-.container {
-    
-    
-}
+
 
 /*Features*/
 
@@ -323,8 +313,4 @@ img {
     margin: 0 auto;
     
 
-}
-
-.map {
-    
 }
