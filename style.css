@@ -258,3 +258,8 @@ img {
     align-content: start;
 
 }
+
+.main-header {
+    display: grid;
+    
+}
