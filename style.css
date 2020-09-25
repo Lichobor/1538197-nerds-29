@@ -38,7 +38,14 @@ body {
 }
 
 .main-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--black);
     background-color: var(--light-gray);
+    height: 114px;  
+    
 }
 
 a {
@@ -54,16 +61,20 @@ img {
 /*Navigation*/
 
 .main-navigation {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: var(--black);
-    background-color: var(--light-gray);
+    
 }
 
 .navigation-list {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 437px;
+    
+    
+}
+
+.basket-link {
+    
     
 }
 
@@ -77,6 +88,11 @@ img {
 .basket-link:active {
     color: var(--black);
     opacity: 0.3
+}
+
+.navigation-list li {
+    display: inline;
+
 }
 
 .big-button {
@@ -107,22 +123,41 @@ img {
     
 }
 
+/*Container*/
+.container {
+    
+    
+}
+
 /*Features*/
 
 .features {
     background-color: var(--light-gray);
+    
 }
 
 .main-title,
 .second-title {
-    visibility: hidden; 
+    display: none;    
+}
+
+.slider {
+    width: 1157px;
+    margin: 0 auto;
 }
 
 /*Productes*/
 
+.product {
+    width: 1157px;
+    margin: 0 auto;
+}
+
 .product-list {
     list-style: none;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 
 .button {
@@ -180,6 +215,13 @@ img {
 }
 
 /*Services*/
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1157px;
+    margin: 0 auto;
+}
 
 .services-text-1 {
     font-weight: 500;
@@ -245,6 +287,21 @@ img {
     list-style: none;
 }
 
+/*Clientes*/
+
+.clientes-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1157px;
+    margin: 0 auto;
+}
+
+/*Footer*/
+
+.main-footer {
+    margin: 0 auto;
+}
+
 /*Grid*/
 
 .page {
@@ -259,7 +316,15 @@ img {
 
 }
 
-.main-header {
+.main-header-wrapper {
     display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    width: 1157px;
+    margin: 0 auto;
+    
+
+}
+
+.map {
     
 }
