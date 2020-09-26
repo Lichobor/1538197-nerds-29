@@ -8,29 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-body">
-    <header class="main-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="img\nerds-logo.svg" width:"160" height:"65" alt="логотип дизайн-студии Нёрдс">
-      </a>
-        <nav class="main-navigation">
-            <ul class="navigation-list">
-              <li><a href="blank.html">cтудия</a></li>
-              <li><a href="blank.html">клиенты</a></li>
-              <li><a href="catalog.html">магазин</a></li>
-              <li><a href="blank.html">контакты</a></li>       
-            </ul>
-            <a class="basket-link" href="blank.html">корзина</a>
-          </nav>
-    </header>
-    <main>
-        <h1 class="main-title-catalog">Магазин готовых шаблонов</h1>
+  <div class="catalog-header-wrapper">
+     <header class="main-header">
+       <div class="main-header-wrapper">
+          <a class="main-header-logo" href="index.html">
+            <img src="img\nerds-logo.svg" width="160" height="65" alt="логотип дизайн-студии Нёрдс">
+          </a>
+         <nav class="main-navigation">
+           <ul class="navigation-list">
+             <li>
+               <a href="blank.html">cтудия</a>
+             </li>
+             <li>
+               <a href="blank.html">клиенты</a>
+             </li>
+             <li>
+               <a href="catalog.html">магазин</a>
+             </li>
+             <li>
+               <a href="blank.html">контакты</a>
+             </li>       
+           </ul>
+         </nav>
+           <div class="basket">
+             <a class="basket-link" href="blank.html">корзина</a>
+             <img src="#" width="15" height="11" alt="">
+           </div> 
+       </div>
+     </header>
+      <h1 class="main-title-catalog">Магазин готовых шаблонов</h1>
+  </div>         
+    <main class="catalog-main">
         <section>
             <h2 second-title>Фильтр товаров</h2>
             <!--Здесь будет форма фильтра-->
         </section>
         <section>
             <h2 class="second-title">Карточки товаров</h2>
-            <ul class="product-list">
+            <ul class="catalog-product-list">
                 <li>
                     <a href="#">
                       <img src="img\img-sedona 1.jpg" alt="фото sedona">
@@ -88,20 +103,22 @@
         </p>
       </section>
       <section class="social-network">
-        <h2 class="second-title">Давайте дружить, это выгодно</h2>
-        <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+       <div class="social-content"> 
+         <h2 class="second-title-visible">Давайте дружить, это выгодно</h2>
+         <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+       </div>
         <ul class="social-list">
-          <li class="item vk">
+          <li class="social-item vk">
             <a href="https://vk.com/">
               <img src="img\vk-icon.svg" width="26" height="15" alt="VK">
             </a>
           </li>
-          <li class="item fb">
+          <li class="social-item fb">
             <a href="https://www.facebook.com/">
               <img src="img\fb-icon.svg" width="12" height="22" alt="FB">                    
             </a>
           </li>
-          <li class="item inst">
+          <li class="social-item inst">
             <a href="https://www.instagram.com/">
               <img src="img\insta-icon.svg" width="21" height="21" alt="INSTAGRAM">
             </a>
@@ -110,12 +127,14 @@
       </section>
       <section class="contacts">
         <h2 class="second-title">Наш адрес</h2>
-         <p class="contacts-capture">HЁRDS DESIGN STUDIO</p>
-         <p class="contacts-text">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p>
-         <p class="phone">
-           <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-         </p>
-         <button class="big-button" type="button">Напишите нам</button>
+        <div class="catalog-address">
+          <p class="contacts-capture">HЁRDS DESIGN STUDIO</p>
+          <p class="contacts-text">191186, Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p class="phone">
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          </p>
+          <button class="big-button" type="button">Напишите нам</button>
+        </div>  
       </section>
     </footer>
 </body>
