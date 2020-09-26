@@ -339,10 +339,6 @@ img {
     opacity: 0.1;
 }
 
-/*Catalog*/
-.pagination-list {
-    list-style: none;
-}
 
 /*Clientes*/
 
@@ -423,4 +419,58 @@ img {
     margin: 0 auto;
     
 
+}
+
+
+/*Catalog*/
+.pagination-list {
+    list-style: none;
+}
+
+.catalog-header-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--light-gray);
+    height: 355px;
+}
+
+.main-title-catalog {
+    justify-self: center;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    
+}
+
+.catalog-main {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 140px;
+    min-width: 1160px;
+    margin: 0 auto;
+
+}
+
+.catalog-product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 30px;
+}
+
+.pagination-list {
+    display: grid;
+    grid-template-columns: repeat(3, 50px) 260px;
+    column-gap: 11px;
+    width: 443px;
+}
+
+.catalog-address {
+    position: absolute;
+    width: 319px;
+    height: 308px;
+    left: 140px;
+    top: 2305px;
+    background-color: var(--white);
+    text-align: center;
 }
