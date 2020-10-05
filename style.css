@@ -36,16 +36,6 @@ body {
     background-color: var(--white);   
 }
 
-.main-header {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: var(--black);
-    background-color: var(--light-gray);
-    height: 114px;  
-    
-}
 
 a {
     text-decoration: none;
@@ -57,21 +47,82 @@ img {
     height: auto;
 }
 
+/*Grid*/
+
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;    
+
+}
+
+/*Main Header*/
+
+.main-header {
+    margin: 0 auto;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: var(--light-gray);
+    height: 114px;
+    overflow: hidden;  
+        
+}
+
+
 /*Navigation*/
 
+.main-navigation {
+    margin: 0 auto ;
+    width: 1160px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     
+}
 
 .navigation-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 437px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 487px;  
     
 }
  
+.navigation-list a {
+    display: block;
+    padding: 25px 22.5px;
 
+}
+
+.basket-link {
+    display: block;
+    padding: 25px 0px 25px 40px;
+    position: relative;
+
+}
+
+.basket-link::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    top: 30px;
+    left: 0;
+
+}
 
 .navigation-list a:hover,
 .basket-link:hover {
@@ -84,14 +135,35 @@ img {
     opacity: 0.3
 }
 
-.navigation-list a {
-    display: block;
 
+/*Features*/
+
+.features {
+    margin: 0 auto 64px;
+    background-color: var(--light-gray);
+    outline: 3px solid var(--light-yellow);
+    outline-offset: 3px;
+    
+}
+
+.main-title,
+.second-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    
 }
 
 .big-button {
+    display: block;
     width: 240px;
-    height: 50px;
+    height: 20px;
     background-color: var(--light-red);
     color: var(--white);
     border-radius: 3px;
@@ -100,63 +172,65 @@ img {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
+    padding: 17px 0;
+    
+
 }   
+
 
 .big-button:hover,
 .big-button:focus {
     background-color: var(--basic-red);
     
-
 }
 
 
 .big-button:active {
     background-color: var(--dark-red);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    
-    
+        
+}
+
+/*slider*/
+
+.slider {
+    position: relative;
+}
+
+.slider-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
 }
 
 
-/*Container*/
+.slider-item {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    height: 431px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: right;
 
-.basket-link {
-    justify-self: end;
-}
-
-.navigation-list {
-    justify-self: center;
-}
-
-.main-header-logo {
-    justify-self: start;
-}
-
-/*Features*/
-
-.features {
-    background-color: var(--light-gray);
-    
-}
-
-.main-title,
-.second-title {
-    display: none;    
 }
 
 .slide-1 {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto 1fr;
-    width: 1157px;
-    height: 431px;
-    margin: 0 auto;
+    background-image: url("img/nerds-index-slide1 1.png");
 
 }
 
-.picture-slide {
-    grid-row: 1/4;
-    grid-column: 2/3;
+
+.slide-2 {
+    background-image: url("img/nerds-index-slide2 1.png");
+
+}
+
+
+.slide-3 {
+    background-image: url("img/nerds-index-slide3 1.png")
+
 }
 
 
@@ -168,32 +242,46 @@ img {
 }
 
 .text-slide{
-    align-self: start;
-    margin-top: -15px;
-    margin-bottom: 40px;
+    margin-top: -20px;
+    margin-bottom: 50px;
 }
     
 
 .slide-2,
 .slide-3 {
-    display: none;
+    display: none ;
 }
 
 
-.radio-button {
+.slider-controls  {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 88px;
-    height: 18px;
-    left: 676px;
-    top: 431px;
+    left: 600px;
+    bottom: 96px;
 }
 
+.slider-controls button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-controls .current {
+    border: 2px solid var(--gray);
+}
 
 /*Productes*/
 
 .product {
     width: 1160px;
-    margin: 50px auto 50px;
+    margin: 0 auto;
+    outline: 3px solid green;
+    outline-offset: 3px;
     
 }
 
@@ -201,15 +289,26 @@ img {
     list-style: none;
     margin: 0;
     padding:0;
-    display: grid;
-    justify-content: start;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.product-list li {
+    margin-right: 100px;
+    
+}
+.product-list li:nth-child(3) {
+    margin-right: 60px;
     
 }
 
 .product-picture {
-    justify-self: start;
+    order: 10;
 }
+
+
+
 
 .button {
     width: 160px;
@@ -277,8 +376,7 @@ img {
 /*Services*/
 
 .services {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    
     width: 1160px;
     margin: 100px auto 0;
     
@@ -303,29 +401,20 @@ img {
 }
 
 .progress-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    
     list-style: none;
-    justify-self: end;
+    margin: 0;
+    padding: 0;
     width: 357px;    
 }
 
-.progress-list dt{
-    grid-row: 1/2;
-    
-}
-
-.progress-list dd {
-   margin-left: 5px;
-}
 
 .description-progress {
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    justify-self: center;
+    
 }
 
 .progress .number {
@@ -342,25 +431,17 @@ img {
 }
 
 .progress-wrapper {
-    display: grid;
-    grid-template-rows: repeat(208 auto auto);
+    
     width: 357px;
-    justify-self: end;
-}
-
-.big-logo {
-    justify-self: end;
-}
-    
-.content-wrapper {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
     
 }
 
-
+    
+ 
 .social-list {
     list-style: none; 
+    margin: 0;
+    padding: 0;
     
     
 }
@@ -389,10 +470,7 @@ img {
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-left: 120px;
-    margin-top: 120px;
+    
     
     
     
@@ -414,9 +492,11 @@ img {
     margin: 90px auto 0;
 }
 
-.map-capture {
-    margin-left: 50px ;
+.contacts {
+    position: relative;
+
 }
+    
 
 .address {
     display: block;
@@ -424,26 +504,19 @@ img {
     width: 289px;
     height: 297px;
     left: 120px;
-    top: 1857px;
+    top: 40px;
     background-color: var(--white);
     text-align: center;
 }
     
 
 .social-network {
-    display: grid;
-    grid-template-columns: 540px 1fr;
+    
     width: 1160px;
     margin: 0 auto;
 }
 
-.social-list {
-    display: grid;
-    grid-template-columns: repeat(3, 81px);
-    column-gap: 9px;
-    justify-self: center;
-    align-self: center;
-}
+
 
 
 .social-content {
@@ -463,27 +536,7 @@ img {
 
 /*Grid*/
 
-.page {
-    height: 100%;
-}
 
-.page-body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
-
-}
-
-.main-navigation {
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    width: 1160px;
-    margin: 0 auto ;
-    align-items: center;
-    
-
-}
 
 
 /*Catalog*/
@@ -492,8 +545,7 @@ img {
 }
 
 .catalog-header-wrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    
     background-color: var(--light-gray);
     height: 355px;
 }
@@ -507,9 +559,7 @@ img {
 }
 
 .catalog-main {
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    column-gap: 140px;
+    
     min-width: 1160px;
     margin: 0 auto;
 
@@ -519,25 +569,11 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 30px;
+    
 }
 
 .pagination-list {
-    display: grid;
-    grid-template-columns: repeat(3, 50px) 260px;
-    column-gap: 11px;
+    
     width: 443px;
 }
 
-.catalog-address {
-    position: absolute;
-    width: 319px;
-    height: 308px;
-    left: 140px;
-    top: 2376px;
-    background-color: var(--white);
-    text-align: center;
-}
