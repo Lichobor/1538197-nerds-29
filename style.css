@@ -1,9 +1,6 @@
 /*Variablez*/
 
-:root {
-    --light-gray: #E1E1E1;
-    --gray: #888888;
-    --dark-gray: #444444;
+:root {         
     --light-red: #FB565A;
     --basic-red: #E74246;
     --dark-red: #D7373B;
@@ -18,10 +15,15 @@
     --dark: #283136;
     --light-dark:#4D4D4D;
     --white: #FFFFFF;
-    --basic-white: #EEEEEE;
+    --basic-white: #EEEEEE;    
+    --dark-gray: #444444;
+    --gray: #888888;
     --basic-gray: #A6A6A6;
-   
-}
+    --light-gray-1: #D5D5D5;
+    --light-gray-2: #DFDFDF;
+    --light-gray-3: #E1E1E1;
+    --light-gray-4: #DBDBDB;
+}  
 
 /*Global*/
 
@@ -81,8 +83,8 @@ img {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--black);
-    background-color: var(--light-gray);
-    height: 114px;
+    background-color: var(--basic-white);
+    height: 115px;
     overflow: hidden;  
         
 }
@@ -148,12 +150,16 @@ img {
     opacity: 0.3
 }
 
+.main-header-logo:active path {
+    fill: var(--basic-gray);
+}
+
 
 /*Features*/
 
 .features {
     margin: 0 auto 64px;
-    background-color: var(--light-gray);
+    background-color: var(--basic-white);
     
 }
 
@@ -527,8 +533,8 @@ img {
 
 .marker {
     position: absolute;
-    left: 765px;
-    top: 70px;
+    left: 715px;
+    top: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
     
@@ -536,16 +542,16 @@ img {
 .address {
     display: grid;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: absolute;
-    width: 299px;
-    height: 289px;
-    left: 131px;
-    top: 50px;
+    width: 300px;
+    height: 290px;
+    left: 120px;
+    top: 40px;
     background-color: var(--white);
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     box-sizing: border-box;
     
 }
@@ -604,18 +610,20 @@ img {
 
 
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover {
     background-color: var(--basic-red);
+
 }
 
 
 .social-link:active {
     background-color: var(--dark-red);
+
 }
 
 .social-link:active svg {
     opacity: 0.3;
+
 }
 
 
@@ -692,42 +700,120 @@ img {
 
 
 /*Catalog*/
-.pagination-list {
-    list-style: none;
-}
 
-.catalog-header-wrapper {
-    
-    background-color: var(--light-gray);
-    height: 355px;
-}
+
 
 .main-title-catalog {
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
+    background-color: var(--basic-white);
+    margin: 0;
+    height: 240px;
+    
     
 }
 
 .catalog-main {
-    
-    min-width: 1160px;
+    display: grid;
+    grid-column: 260px 1fr;
+    column-gap: 140px;
+    width: 1160px;
     margin: 0 auto;
+    outline: 3px solid green;
+    outline-offset: 3px;
 
+}
+
+.catalog-filter {
+    outline: 3px solid yellow;
+    outline-offset: 3px;
+}
+
+.catalog-product {
+    grid-column: 2/3;
+    outline: 3px solid orange;
+    outline-offset: 3px;
+        
 }
 
 .catalog-product-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 30px;
     
 }
 
 .pagination-list {
-    
-    width: 443px;
+    display: flex;
+    list-style: none;
+    margin: 50px 0;
+    padding: 0;
+   
 }
+
+.pagination-link,
+.big-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: var(--basic-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.big-link {
+    width: 260px;
+
+}
+
+.pagination-link:hover,
+.big-link:hover {
+    background-color: var(--light-gray-2);
+
+}
+
+.pagination-link:focus,
+.big-link:focus {
+    background: var(--light-gray-1);
+    border: 3px solid var(--light-gray-4);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.pagination-link:active,
+.big-link:active {
+    background-color: var(--light-gray-1);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+
+}
+
+.pagination-link:active span,
+.big-link:active span {
+    opacity: 0.3;
+    
+
+}
+
+
+
+
+
+
+
+
+/*Popup*/
 
 .modal-login {
     position: fixed;
