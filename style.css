@@ -19,10 +19,12 @@
     --dark-gray: #444444;
     --gray: #888888;
     --basic-gray: #A6A6A6;
+    --basic-gray-2: #ABABAB;
     --light-gray-1: #D5D5D5;
     --light-gray-2: #DFDFDF;
     --light-gray-3: #E1E1E1;
     --light-gray-4: #DBDBDB;
+    --light-gray-5: #D7DCDF;
 }  
 
 /*Global*/
@@ -728,10 +730,82 @@ img {
 
 }
 
+
+/*Catalog-filter*/
+
+
 .catalog-filter {
+    
     outline: 3px solid yellow;
     outline-offset: 3px;
 }
+
+.filter-item {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 50px;
+
+}
+
+.filter-item legend {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.range-controls {
+    position: relative;
+    height: 80px;
+    background-color: var(--basic-white);
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding: 39px 27.5px 0;
+    box-sizing: border-box;
+}
+
+.range-controls .scale {
+    width: 205px;
+    height: 2px;
+    background-color: var(--light-gray-5);
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background-color: var(--light-green);
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border: 8px solid var(--white);
+    background-color: var(--basic-gray-2);
+    border-radius: 50%;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+
+}
+
+/*Catalog-product*/
+
 
 .catalog-product {
     grid-column: 2/3;
@@ -751,6 +825,23 @@ img {
     
 }
 
+.product-link {
+    display: block;
+    position: relative;
+    margin-top: 40px;
+    width: 360px;
+    height: 580px;
+}
+
+.product-link::before {
+   content: "";
+   position: absolute;
+   width: 360px;
+   height: 40px;
+   background-color: var(--basic-white);
+   top: -40px;
+   
+}
 
 
 .pagination-list {
@@ -776,25 +867,6 @@ img {
 
 .big-link {
     width: 260px;
-
-}
-
-.product-link {
-    display: block;
-    position: relative;
-    margin-top: 40px;
-    width: 360px;
-    height: 580px;
-}
-
-.product-link::before {
-   content: "";
-   position: absolute;
-   width: 360px;
-   height: 40px;
-   background-color: var(--basic-white);
-   top: -40px;
-   
 
 }
 
