@@ -732,8 +732,7 @@ img {
 .catalog-filter {
     grid-column: 1/2;
     margin-top: 60px;
-    outline: 3px solid yellow;
-    outline-offset: 3px;
+    
 }
 
 
@@ -1010,8 +1009,6 @@ img {
 
 .catalog-product {
     grid-column: 2/3;
-    outline: 3px solid orange;
-    outline-offset: 3px;
     margin-top: 60px;
         
 }
