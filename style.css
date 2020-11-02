@@ -548,7 +548,7 @@ img {
 
 }
 
-.map img {
+.contacts img {
     
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -578,6 +578,17 @@ img {
     
 }
 
+.address .contacts-text {
+    margin-top: -15px;
+}
+
+.address .phone {
+    margin-top: -15px;
+}
+
+.contacts .big-button {
+    margin-top: -5px;
+}
 
 .contacts-capture {
     font-weight: 700;
@@ -743,9 +754,7 @@ img {
     column-gap: 140px;
     width: 1160px;
     margin: 0 auto;
-    outline: 2px solid green;
-    outline-offset: 2px;
-    
+        
 }
 
 
@@ -1011,6 +1020,7 @@ img {
     text-transform: uppercase;
     text-align: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    outline: none;
 }
 
 .filter-button:hover {
@@ -1035,9 +1045,7 @@ img {
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
-    outline: 2px solid yellow;
-    outline-offset: 2px;
-        
+            
 }
 
 .catalog-sort {
@@ -1045,23 +1053,84 @@ img {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     column-gap: 40px;
-    outline: 2px solid red;
-    outline-offset: -2px;
+    margin-top: 42px;
+    
 }
 
-.sort-title {
-    outline: 2px solid blue;
-    outline-offset: -2px;
-}
+
 
 .sort-button-group {
-    outline: 2px solid palevioletred;
-    outline-offset: -2px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    
 }
+
+
+.sort-button {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+    outline: none;
+}
+
+
+.sort-button-down,
+.sort-button-up {
+    width: 11px;
+    height: 10px;
+    align-self: center;
+    opacity: 0.5;
+    padding-bottom: 20px;
+
+}
+
+.sort-button-down:hover,
+.sort-button-up:hover {
+    opacity: 1;
+
+}
+
+.sort-button-down:active path,
+.sort-button-up:active path {
+    fill: var(--light-black);
+    
+}
+
+.sort-button-down:focus path,
+.sort-button-up:focus path {
+    fill: var(--light-black);
+}
+
+
+
+.sort-button-down {
+    margin-left: 10px;
+}
+
+.sort-button span {
+    opacity: 0.3;
+}
+
+.sort-button:hover span {
+    opacity: 0.6;
+}
+
+.sort-button:active span,
+.sort-button:focus span{
+    opacity: 1;
+}
+
 
 .catalog-product-list {
     list-style: none;
     margin: 0;
+    margin-top: 25px;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
