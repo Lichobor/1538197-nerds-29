@@ -1173,7 +1173,7 @@ img {
     width: 25px;
     height: 25px;
     border: none;
-    background-image: url("../img/Shape-off.svg");
+    background-image: url("../img/shape-off.svg");
     background-position: center;
     background-repeat: no-repeat;
     left: -35px;
@@ -1195,7 +1195,7 @@ img {
     height: 25px;
     background-color: var(--white);
     border: none;
-    background-image: url("../img/Shape.svg"), url("../img/Shape-2.svg");
+    background-image: url("../img/shape.svg"), url("../img/shape-2.svg");
     background-position: center, 5px 3px;
     background-repeat: no-repeat;
     left: -33px;
@@ -1381,7 +1381,7 @@ img {
     position: absolute;
     width: 360px;
     height: 40px;
-    background-image: url("../img/Shape-modal.svg");
+    background-image: url("../img/shape-modal.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
     top: -40px;
