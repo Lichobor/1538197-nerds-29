@@ -1,4 +1,4 @@
-const loginLink = document.querySelector(".adress-button");
+const loginLink = document.querySelector(".address-button");
 const loginPopup = document.querySelector(".modal-login");
 const loginlClose = document.querySelector(".modal-close");
 const loginForm = document.querySelector(".modal-form");

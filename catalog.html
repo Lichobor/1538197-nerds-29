@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2? family = Roboto: wght @ 400; 500; 700 & display = swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
   <header class="main-header">
@@ -18,19 +18,19 @@
        </a>
       <ul class="navigation-list">
          <li>
-           <a href="blank.html">cтудия</a>
+           <a href="#">cтудия</a>
          </li>
          <li>
-           <a href="blank.html">клиенты</a>
+           <a href="#">клиенты</a>
          </li>
          <li>
            <a href="catalog.html">магазин</a>
          </li>
          <li>
-           <a href="blank.html">контакты</a>
+           <a href="#">контакты</a>
          </li>       
       </ul>
-      <a class="basket-link" href="blank.html">корзина</a>
+      <a class="basket-link" href="#">корзина</a>
     </nav>               
 </header>
       <div class="main-title-catalog">
@@ -111,7 +111,7 @@
             <h2 class="visually-hidden">Карточки товаров</h2>
             <div class="catalog-sort">
               <div class="sort-title">
-                <p class="legend">сортировать по:</p>
+                <p class="legend">сортировать:</p>
               </div>
               <div class="sort-button-group">
                 <button class="sort-button" type="button"><span>по цене</span></button>
@@ -131,61 +131,61 @@
             </div>
             <ul class="catalog-product-list">
                 <li>
-                    <a class="product-link" href="#">
+                    <div class="product-link current-link">
                       <img src="img/img-sedona.jpg" width="360" height="580" alt="фото sedona">
-                    </a>
-                    <div class="catalog-product-modal">
-                      <p class="product-modal-title">sedona</p>
+                    </div>
+                    <div class="catalog-product-modal current-modal">
+                      <p class="product-modal-title"><a href="#">sedona</a></p>
                       <p class="product-modal-description">Информационный сайт<br>для туристов</p>
                       <a class="modal-button" href="#">9900 &#8381;</a>
                     </div>
                 </li>
                 <li>
-                    <a class="product-link" href="#">
+                    <div class="product-link">
                       <img src="img/img-pink.jpg" width="360" height="580" alt="фото pink">
-                    </a>
+                    </div>
                     <div class="catalog-product-modal">
-                      <p class="product-modal-title">pink app</p>
+                      <p class="product-modal-title"><a href="#">pink app</a></p>
                       <p class="product-modal-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
                       <a class="modal-button" href="#">9900 &#8381;</a>
                     </div>
                 </li>
                 <li>
-                    <a class="product-link" href="#">
+                    <div class="product-link">
                       <img src="img/img-barbershop.jpg" width="360" height="580" alt="фото barbershop">
-                    </a>
+                    </div>
                     <div class="catalog-product-modal">
-                      <p class="product-modal-title">barbershop</p>
+                      <p class="product-modal-title"><a href="#">barbershop</a></p>
                       <p class="product-modal-description">Сайт салона красоты.<br>Для мужчин, да.</p>
                       <a class="modal-button" href="#">9900 &#8381;</a>
                     </div>
                 </li>
                 <li>
-                    <a class="product-link" href="#">
+                    <div class="product-link">
                       <img src="img/img-mishka.jpg" width="360" height="580" alt="фото mishka">
-                    </a>
+                    </div>
                     <div class="catalog-product-modal">
-                      <p class="product-modal-title">mishka</p>
+                      <p class="product-modal-title"><a href="#">mishka</a></p>
                       <p class="product-modal-description">Интернет-магазин<br>вязаных игрушек</p>
                       <a class="modal-button" href="#">9900 &#8381;</a>
                     </div>
                 </li>
                 <li>
-                    <a class="product-link" href="#">
+                    <div class="product-link">
                       <img src="img/img-aplus.jpg" width="360" height="580" alt="фото alpus">
-                    </a>
+                    </div>
                     <div class="catalog-product-modal">
-                      <p class="product-modal-title">a plus</p>
+                      <p class="product-modal-title"><a href="#">a plus</a></p>
                       <p class="product-modal-description">Лендинг курсов повышения<br>квалификации</p>
                       <a class="modal-button" href="#">9900 &#8381;</a>
                     </div>
                 </li>
                 <li>
-                    <a class="product-link" href="#">
+                    <div class="product-link">
                       <img src="img/img-kvast.jpg" width="360" height="580" alt="фото kvast">
-                    </a>
+                    </div>
                     <div class="catalog-product-modal">
-                      <p class="product-modal-title">КВАСТ</p>
+                      <p class="product-modal-title"><a href="#">КВАСТ</a></p>
                       <p class="product-modal-description">Промо-сайт производителя<br>крафтового кваса</p>
                       <a class="modal-button" href="#">9900 &#8381;</a>
                     </div>
@@ -196,7 +196,7 @@
           <h2 class="visually-hidden">Перейти на следующую страницу</h2> 
             <ul class="pagination-list">
                 <li>
-                    <a class="pagination-link"><span>1</span></a>
+                    <a class="pagination-link current"><span>1</span></a>
                 </li>
                 <li>
                     <a class="pagination-link" href="#"><span>2</span></a>
@@ -212,8 +212,7 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">      
-         <h2 class="visually-hidden">Карта</h2>
-         <img src="img/map.png" width="1440" height="416" alt="карта">       
+         <h2 class="visually-hidden">Карта</h2>           
          <div class="address">
             <h2 class="second-title visually-hidden">Наш адрес</h2>
              <p class="contacts-capture">HЁRDS DESIGN STUDIO</p>
@@ -221,7 +220,7 @@
              <p class="phone">
                <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
              </p>
-            <button class="address-button big-button" type="button"><span>Напишите нам</span></a>              
+            <button class="address-button big-button" type="button"><span>Напишите нам</span></button>              
          </div>
          <div class="marker">
           <img src="img/map-marker.png" width="231" height="190" alt="Санкт-Петербург, улица Большая Конюшенная, дом девятнадцать дробь восемь">
@@ -264,18 +263,18 @@
      <section class="modal-login">
        <h2 class="modal-title">Напишите нам</h2>
        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="POST">
-        <div class="label-form" > 
-           <label>Ваше имя:<br>
+        <div class="label-form"> 
+           <label>Ваше имя:
             <input class="login-user" type="text" name="login" id="login-field" placeholder="Имя Фамилия">
            </label>
         </div>
-        <div class="email-form" >
-           <label>Ваш email:<br>
+        <div class="email-form">
+           <label>Ваш email:
             <input class="email-user" type="email" name="email" id="email-field" placeholder="email@example.com">
            </label>
         </div>
         <div class="description-form">
-           <label>Текст письма<br>
+           <label>Текст письма:
             <textarea name="modal-description" id="description-field" cols="94" rows="8" placeholder="В свободной форме"></textarea>
            </label>
         </div>
